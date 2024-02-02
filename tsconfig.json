@@ -5,6 +5,7 @@
     "outDir": "./dist/out-tsc",
     "skipLibCheck": true,
     "esModuleInterop": true,
+    "strict": false,
     "sourceMap": true,
     "declaration": false,
     "experimentalDecorators": true,
