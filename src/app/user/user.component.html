@@ -1,0 +1,18 @@
+<label>Enter username</label>
+<br>
+<br>
+<input type="text"
+       class="form-control"
+       [(ngModel)]="userName"
+       (input)="onUpdateUserName($event)">
+<br>
+<br>
+<h4>{{userNameStatus}}</h4>
+<br>
+<br>
+<button
+  class="btn btn-primary"
+  [disabled]="!userName"
+  (click)="onResetUsername()">
+  Reset username
+</button>
