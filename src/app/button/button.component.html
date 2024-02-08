@@ -1,0 +1,17 @@
+<button
+  class="btn btn-primary"
+  (click)="onButtonPushed()">
+  Display details
+</button>
+<br>
+<br>
+<p *ngIf="pushed; else notPushed">password = tuna</p>
+<ng-template #notPushed>
+  <p></p>
+</ng-template>
+
+<br>
+<p *ngFor="let log of logs; let i = index"
+  [ngStyle]="{backgroundColor: i>=5 ?'blue':'white'}"
+   [ngClass]="{'white-text': i>=5}"
+  >{{log}}</p>
